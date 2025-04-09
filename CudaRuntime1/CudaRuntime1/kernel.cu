@@ -197,7 +197,7 @@ int main() {
 	}
 
 
-	int line_count = sizeof(lines_for_A) / sizeof(LineSegment);
+	int line_count = sizeof(lines_for_Question) / sizeof(LineSegment);
 
 	 // draw_glyph(image_data, lines_for_A, line_count, { 255, 0, 0 }, { 20, 0 }, scale_down_and_italic, width);
 	 // draw_glyph_stroke(image_data, lines_for_A, line_count, 30, { 0, 0, 255 }, { 20, 0 }, scale_down_and_italic, width);
@@ -209,18 +209,18 @@ int main() {
 
 	LineSegment *lines_transformed = new LineSegment[line_count];
 	for (int i = 0; i < line_count; i++) {
-		lines_transformed[i].start = scale_down_and_italic(lines_for_A[i].start);
-		lines_transformed[i].end = scale_down_and_italic(lines_for_A[i].end);
+		lines_transformed[i].start = scale_down_and_italic(lines_for_Question[i].start);
+		lines_transformed[i].end = scale_down_and_italic(lines_for_Question[i].end);
 	}
 
 		LineSegment* lines_gpu;
-	TRY_CUDA(cudaMalloc(&lines_gpu, sizeof(lines_for_A)));
-	TRY_CUDA(cudaMemcpy(lines_gpu, lines_transformed, sizeof(lines_for_A), cudaMemcpyHostToDevice));
+	TRY_CUDA(cudaMalloc(&lines_gpu, sizeof(lines_for_Question)));
+	TRY_CUDA(cudaMemcpy(lines_gpu, lines_transformed, sizeof(lines_for_Question), cudaMemcpyHostToDevice));
 
 	dim3 block_size(BLOCK_SIZE, BLOCK_SIZE);
 	dim3 grid_size(divide_ceil(width, BLOCK_SIZE), divide_ceil(height, BLOCK_SIZE));
 
-	draw_glyph_gpu << <grid_size, block_size >> > (image_data_gpu, lines_gpu, line_count, { 255, 0, 0 }, { 600, 0 }, width);
+	draw_glyph_gpu << <grid_size, block_size >> > (image_data_gpu, lines_gpu, line_count, { 0, 0, 255 }, { 600, 0 }, width);
 	TRY_CUDA(cudaGetLastError());
 	TRY_CUDA(cudaDeviceSynchronize());
 	
