@@ -691,4 +691,38 @@ LineSegment lines_for_Question[] = {
     { { 65, 237 }, { 75, 222 } },
     { { 75, 222 }, { 116, 222 } },
 };
+
+LineSegment* letters_basic[] = {
+    lines_for_A,
+    lines_for_B,
+    lines_for_C,
+    lines_for_D,
+    lines_for_E,
+    lines_for_F,
+    lines_for_G,
+    lines_for_H,
+    lines_for_I,
+    lines_for_J,
+    lines_for_K,
+    lines_for_L,
+    lines_for_M,
+    lines_for_Z,
+    lines_for_Z,
+    lines_for_N,
+    lines_for_O,
+    lines_for_P,
+    lines_for_Q,
+    lines_for_R,
+    lines_for_S,
+    lines_for_T,
+    lines_for_U,
+    lines_for_V,
+    lines_for_W,
+    lines_for_X,
+    lines_for_Y,
+    lines_for_Z,
+};
+
+int letter_line_counts[] = { 23, 32, 16, 19, 22, 21, 20, 28, 12, 16, 30, 15, 30, 26, 17, 23, 22, 33, 25, 18, 21, 16, 28, 31, 21, 16 };
+
 #endif 

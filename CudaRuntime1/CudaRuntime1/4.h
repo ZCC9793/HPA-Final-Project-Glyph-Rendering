@@ -1704,3 +1704,34 @@ LineSegment lines_4_for_z[] = {
     { { 186, 255 }, { 14, 255 } },
     { { 14, 255 }, { 0, 255 } },
 };
+
+LineSegment* letters_4[] = {
+    lines_4_for_a,
+    lines_4_for_b,
+    lines_4_for_c,
+    lines_4_for_d,
+    lines_4_for_e,
+    lines_4_for_f,
+    lines_4_for_g,
+    lines_4_for_h,
+    lines_4_for_i,
+    lines_4_for_j,
+    lines_4_for_k,
+    lines_4_for_l,
+    lines_4_for_m,
+    lines_4_for_n,
+    lines_4_for_o,
+    lines_4_for_p,
+    lines_4_for_q,
+    lines_4_for_r,
+    lines_4_for_s,
+    lines_4_for_t,
+    lines_4_for_u,
+    lines_4_for_v,
+    lines_4_for_w,
+    lines_4_for_x,
+    lines_4_for_y,
+    lines_4_for_z,
+};
+
+int letter_4_line_counts[] = { 62, 38, 37, 35, 37, 38, 68, 48, 21, 21, 57, 18, 44, 26, 32, 33, 33, 26, 43, 35, 23, 28, 45, 61, 57, 49 };
