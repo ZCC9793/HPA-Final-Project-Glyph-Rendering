@@ -15,6 +15,10 @@
 #include <cmath>
 
 #include "Letters.h"
+#include "1.h"
+#include "2.h"
+#include "3.h"
+#include "4.h"
 
 using namespace std;
 
@@ -197,7 +201,7 @@ int main() {
 	}
 
 
-	int line_count = sizeof(lines_for_Question) / sizeof(LineSegment);
+	int line_count = sizeof(lines_3_for_z) / sizeof(LineSegment);
 
 	 // draw_glyph(image_data, lines_for_A, line_count, { 255, 0, 0 }, { 20, 0 }, scale_down_and_italic, width);
 	 // draw_glyph_stroke(image_data, lines_for_A, line_count, 30, { 0, 0, 255 }, { 20, 0 }, scale_down_and_italic, width);
@@ -209,13 +213,13 @@ int main() {
 
 	LineSegment *lines_transformed = new LineSegment[line_count];
 	for (int i = 0; i < line_count; i++) {
-		lines_transformed[i].start = scale_down_and_italic(lines_for_Question[i].start);
-		lines_transformed[i].end = scale_down_and_italic(lines_for_Question[i].end);
+		lines_transformed[i].start = scale_down_and_italic(lines_3_for_z[i].start);
+		lines_transformed[i].end = scale_down_and_italic(lines_3_for_z[i].end);
 	}
 
 		LineSegment* lines_gpu;
-	TRY_CUDA(cudaMalloc(&lines_gpu, sizeof(lines_for_Question)));
-	TRY_CUDA(cudaMemcpy(lines_gpu, lines_transformed, sizeof(lines_for_Question), cudaMemcpyHostToDevice));
+	TRY_CUDA(cudaMalloc(&lines_gpu, sizeof(lines_3_for_z)));
+	TRY_CUDA(cudaMemcpy(lines_gpu, lines_transformed, sizeof(lines_3_for_z), cudaMemcpyHostToDevice));
 
 	dim3 block_size(BLOCK_SIZE, BLOCK_SIZE);
 	dim3 grid_size(divide_ceil(width, BLOCK_SIZE), divide_ceil(height, BLOCK_SIZE));

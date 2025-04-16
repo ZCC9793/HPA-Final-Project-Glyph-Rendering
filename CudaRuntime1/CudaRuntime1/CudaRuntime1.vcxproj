@@ -14,6 +14,10 @@
     <CudaCompile Include="kernel.cu" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="1.h" />
+    <ClInclude Include="2.h" />
+    <ClInclude Include="3.h" />
+    <ClInclude Include="4.h" />
     <ClInclude Include="Letters.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="stb_image_write.h" />
