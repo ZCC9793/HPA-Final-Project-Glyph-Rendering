@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\",
+  "WorkspaceRootPath": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\Letters.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\Letters.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\stb_image_write.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\stb_image_write.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\Letters.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\Letters.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\stb_image_write.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\stb_image_write.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0330CF4B-8134-4CF2-8AA9-C28FC82CEA51}|CudaRuntime1\\CudaRuntime1.vcxproj|solutionrelative:CudaRuntime1\\2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -38,41 +38,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "stb_image_write.h",
-              "DocumentMoniker": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\stb_image_write.h",
+              "DocumentMoniker": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\stb_image_write.h",
               "RelativeDocumentMoniker": "CudaRuntime1\\stb_image_write.h",
-              "ToolTip": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\stb_image_write.h",
+              "ToolTip": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\stb_image_write.h",
               "RelativeToolTip": "CudaRuntime1\\stb_image_write.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-23T20:50:20.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T20:50:20.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "1.h",
-              "DocumentMoniker": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\1.h",
+              "DocumentMoniker": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\1.h",
               "RelativeDocumentMoniker": "CudaRuntime1\\1.h",
-              "ToolTip": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\1.h",
+              "ToolTip": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\1.h",
               "RelativeToolTip": "CudaRuntime1\\1.h",
               "ViewState": "AgIAAHQEAAAAAAAAAAAwwJgEAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-16T01:20:03.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T01:20:03.027Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "2.h",
-              "DocumentMoniker": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\2.h",
+              "DocumentMoniker": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\2.h",
               "RelativeDocumentMoniker": "CudaRuntime1\\2.h",
-              "ToolTip": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\2.h",
+              "ToolTip": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\2.h",
               "RelativeToolTip": "CudaRuntime1\\2.h",
               "ViewState": "AgIAAK0FAAAAAAAAAAAQwAAGAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -80,24 +78,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "4.h",
-              "DocumentMoniker": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\4.h",
+              "DocumentMoniker": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\4.h",
               "RelativeDocumentMoniker": "CudaRuntime1\\4.h",
-              "ToolTip": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\4.h",
+              "ToolTip": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\4.h",
               "RelativeToolTip": "CudaRuntime1\\4.h",
-              "ViewState": "AgIAAH8FAAAAAAAAAAAQwJcFAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAHAFAAAAAAAAAAAQwJcFAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-16T01:24:47.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T01:24:47.518Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "3.h",
-              "DocumentMoniker": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\3.h",
+              "DocumentMoniker": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\3.h",
               "RelativeDocumentMoniker": "CudaRuntime1\\3.h",
-              "ToolTip": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\3.h",
+              "ToolTip": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\3.h",
               "RelativeToolTip": "CudaRuntime1\\3.h",
               "ViewState": "AgIAAMcFAAAAAAAAAAAAANYFAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -105,26 +102,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Letters.h",
-              "DocumentMoniker": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\Letters.h",
+              "DocumentMoniker": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\Letters.h",
               "RelativeDocumentMoniker": "CudaRuntime1\\Letters.h",
-              "ToolTip": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\Letters.h",
+              "ToolTip": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\Letters.h",
               "RelativeToolTip": "CudaRuntime1\\Letters.h",
-              "ViewState": "AgIAABgVAAAAAAAAAAAwwG8WAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAKwCAAAAAAAAAAAQwMsCAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-08T22:30:55.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "kernel.cu",
-              "DocumentMoniker": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\kernel.cu",
+              "DocumentMoniker": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\kernel.cu",
               "RelativeDocumentMoniker": "CudaRuntime1\\kernel.cu",
-              "ToolTip": "C:\\Users\\zackc\\OneDrive\\Desktop\\GitHub\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\kernel.cu",
+              "ToolTip": "C:\\Users\\zackc\\Desktop\\GitHub Repos\\HPA-Final-Project-Glyph-Rendering\\CudaRuntime1\\CudaRuntime1\\kernel.cu",
               "RelativeToolTip": "CudaRuntime1\\kernel.cu",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAAAA8BAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAQwL4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-04-08T21:41:03.07Z",
               "EditorCaption": ""
