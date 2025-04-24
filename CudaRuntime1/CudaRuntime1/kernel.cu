@@ -164,10 +164,12 @@ __host__ __device__ void draw_glyph_stroke_pixel_wack(ImageData* image_data, Lin
 		Point start = add(line.start, offset);
 		Point end = add(line.end, offset);
 
-		min_dist = min(min_dist, dist_to_segment_squared({ (float)x, (float)y }, start, end));
+		float dist = sqrtf(dist_to_segment_squared({ (float)x, (float)y }, start, end));
+		min_dist = min(min_dist, dist);
+
 	}
 
-	float s = map_range(min_dist, 0, weight * 100, 1, 0);
+	float s = map_range(min_dist, 0, weight, 1, 0);  // much cleaner scale
 	s = float_max(s, 0);
 	if (s < 0.01) return;
 	setPixel(image_data, x, y, width, { (unsigned char)(color.r * s), (unsigned char)(color.g * s), (unsigned char)(color.b * s) });
@@ -231,41 +233,63 @@ void draw_text(ImageData* image_data_gpu, int image_data_size, LineSegment** let
 int main() {
 	int image_data_size = sizeof(unsigned char) * channels * width * height;
 	ImageData* image_data = (ImageData*)malloc(image_data_size);
-	if (image_data == nullptr) {
+	if (!image_data) {
 		cout << "Failed to malloc" << endl;
 		return 0;
 	}
 	memset(image_data, 0, image_data_size);
 
+	// Set alpha channel
 	for (int r = 0; r < height; r++) {
 		for (int c = 0; c < width; c++) {
 			image_data[(r * width + c) * 4 + 3] = 255;
 		}
 	}
 
-
-	int line_count = sizeof(lines_for_A) / sizeof(LineSegment);
-
-	// draw_glyph(image_data, lines_for_A, line_count, { 255, 0, 0 }, { 20, 0 }, scale_down_and_italic, width);
-	// draw_glyph_stroke(image_data, lines_for_A, line_count, 30, { 0, 0, 255 }, { 20, 0 }, scale_down_and_italic, width);
-
+	// Allocate image buffer on GPU
 	ImageData* image_data_gpu = copy_to_gpu(image_data, channels * width * height);
 
-	LineSegment** letters = new LineSegment * [LETTER_COUNT];
-	for (int i = 0; i < LETTER_COUNT; i++) {
-		LineSegment* letter_gpu = copy_to_gpu(letters_basic[i], letter_line_counts[i]);
-		letters[i] = letter_gpu;
+	// Copy all letters to GPU just once
+	LineSegment* letters_gpu[26];
+	for (int i = 0; i < 26; i++) {
+		int count = letter_line_counts[i];
+		letters_gpu[i] = copy_to_gpu(letters_basic[i], count);
 	}
 
-	draw_text(image_data_gpu, image_data_size, letters, "ABCDEFG");
+	// Draw a string
+	const char* text = "ABCDEFG";
+	dim3 block_size(BLOCK_SIZE, BLOCK_SIZE);
+	dim3 grid_size(divide_ceil(width, BLOCK_SIZE), divide_ceil(height, BLOCK_SIZE));
 
+	for (int i = 0; text[i]; i++) {
+		char c = text[i];
+		if (c < 'A' || c > 'Z') continue;
+
+		int index = c - 'A';
+		LineSegment* glyph = letters_gpu[index];
+		int count = letter_line_counts[index];
+
+		Point offset = { (float)i * 256, 100 };  // Adjust spacing & vertical offset
+
+		draw_glyph_stroke_gpu << <grid_size, block_size >> > (
+			image_data_gpu,
+			glyph,
+			count,
+			5,                             // stroke width
+			{ 255, 255, 0 },               // color
+			offset,
+			width
+			);
+
+		try_cuda(cudaGetLastError());
+		try_cuda(cudaDeviceSynchronize());
+	}
+
+	// Copy result back and save
 	try_cuda(cudaMemcpy(image_data, image_data_gpu, image_data_size, cudaMemcpyDeviceToHost));
-
 	stbi_write_png("test_out.png", width, height, channels, image_data, width * channels);
 
 	cout << "Image written" << endl;
-
 	free(image_data);
-
 	return 0;
 }
