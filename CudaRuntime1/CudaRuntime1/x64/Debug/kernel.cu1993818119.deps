@@ -53,6 +53,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.3443
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\eh.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\emmintrin.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\exception
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\functional
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\immintrin.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\initializer_list
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\intrin.h
@@ -78,8 +79,10 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.3443
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\stdexcept
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\stdint.h
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\streambuf
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\system_error
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tmmintrin.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\typeinfo
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\type_traits
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\use_ansi.h
@@ -132,6 +135,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\crt\math_functi
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\crt\sm_70_rt.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\crt\sm_80_rt.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\crt\sm_90_rt.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\cuda.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\cuda_device_runtime_api.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\cuda_runtime.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\cuda_runtime_api.h
@@ -157,6 +161,10 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\texture_types.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\vector_functions.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\vector_functions.hpp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include\vector_types.h
-C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\Letters.h
+C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\1.h
+C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\2.h
+C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\3.h
+C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\4.h
+C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\letters.h
 C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\stb_image.h
 C:\Users\zackc\OneDrive\Desktop\GitHub\HPA-Final-Project-Glyph-Rendering\CudaRuntime1\CudaRuntime1\stb_image_write.h
