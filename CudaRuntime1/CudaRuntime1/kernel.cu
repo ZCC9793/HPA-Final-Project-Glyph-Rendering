@@ -107,17 +107,22 @@ BoundingBox find_bounding_box(Transform t, float size) {
 }
 
 __global__ void draw_glyph_fill_and_stroke_gpu(ImageData img, Glyph glyph, Transform t, Color color, float stroke_weight, BoundingBox box) {
+    extern __shared__ LineSegment shared_lines[];
+    int tid = threadIdx.y * blockDim.x + threadIdx.x;
+    if (tid < glyph.line_count) shared_lines[tid] = glyph.lines[tid];
+    __syncthreads();
+
     int x = blockIdx.x * blockDim.x + threadIdx.x + (int)box.low.x;
     int y = blockIdx.y * blockDim.y + threadIdx.y + (int)box.low.y;
     if (x > box.high.x || y > box.high.y) return;
 
     Point pos = { (float)x, (float)y };
-    bool inside = is_point_inside(pos, glyph.lines, glyph.line_count, t);
+    bool inside = is_point_inside(pos, shared_lines, glyph.line_count, t);
 
     float min_dist = 1e9f;
     for (int i = 0; i < glyph.line_count; ++i) {
-        Point s = apply_transform(glyph.lines[i].start, t);
-        Point e = apply_transform(glyph.lines[i].end, t);
+        Point s = apply_transform(shared_lines[i].start, t);
+        Point e = apply_transform(shared_lines[i].end, t);
         min_dist = fminf(min_dist, dist_to_segment_squared(pos, s, e));
     }
 
@@ -159,7 +164,8 @@ void draw_text(ImageData img, LineSegment** font, int* line_counts, const char* 
         Point size = bounding_box_size(bbox);
         dim3 grid(divide_ceil((int)size.x, BLOCK_SIZE), divide_ceil((int)size.y, BLOCK_SIZE));
 
-        draw_glyph_fill_and_stroke_gpu << <grid, block >> > (img, glyph, t, color, stroke_w, bbox);
+        size_t shared_mem_size = line_counts[index] * sizeof(LineSegment);
+        draw_glyph_fill_and_stroke_gpu << <grid, block, shared_mem_size >> > (img, glyph, t, color, stroke_w, bbox);
         try_cuda(cudaFree(lines_gpu));
     }
     try_cuda(cudaDeviceSynchronize());
@@ -176,18 +182,16 @@ int main() {
     unsigned char* pixels;
     try_cuda(cudaMallocManaged(&pixels, size));
 
-    Transform base = { {0.45f, 0}, {0, 0.45f}, {40, 40} }; // More extreme transform
+    Transform base = { {0.45f, 0}, {0, 0.45f}, {40, 40} };
     ImageData img = { pixels, width, height };
 
-    // Stroke + Fill
     memset(pixels, 0, size);
     draw_text(img, font_host, letter_line_counts, word, base, 135.0f, 3.0f, { 255, 255, 0 });
     write_image("test_output/stroke_fill.png", pixels, width, height);
 
-    // Italic Stroke + Fill
     memset(pixels, 0, size);
     for (int i = 0; i < 5; i++) {
-        float shear = -0.07f * (i + 1); // More italic
+        float shear = -0.05f * (i + 1);
         Transform t = base;
         t.scale_x.y = shear;
         t.offset.y += i * 200;
@@ -195,12 +199,11 @@ int main() {
     }
     write_image("test_output/italic_fill_all.png", pixels, width, height);
 
-    // Bold Stroke + Fill
     memset(pixels, 0, size);
     for (int i = 1; i <= 5; ++i) {
         Transform t = base;
         t.offset.y += (i - 1) * 200;
-        draw_text(img, font_host, letter_line_counts, word, t, 135.0f, 9.0f * i, { 255, 100, (unsigned char)(i * 30) });
+        draw_text(img, font_host, letter_line_counts, word, t, 135.0f, 4.0f * i, { 255, 100, (unsigned char)(50 * i) });
     }
     write_image("test_output/bold_fill_all.png", pixels, width, height);
 
